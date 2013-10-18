@@ -18,7 +18,7 @@ require "iFoundation_v2"
 class 'Plugin' -- {
 	
 	if myHero.charName ~= "Nami" then return end 
-	local SkillQ = Caster(_Q, 850, SPELL_CIRCLE, math.huge, 0.400, 80)
+	local SkillQ = Caster(_Q, 850, SPELL_CIRCLE, 20000, 0.8, 80, true)
 	local SkillW = Caster(_W, 725, SPELL_TARGETED)
 	local SkillR = Caster(_R, 1000, SPELL_LINEAR, 1200, 0.500, 100, true) 
 
